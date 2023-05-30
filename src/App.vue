@@ -3,12 +3,14 @@ import { store } from './data/store';
 
 import AppNavbar from './components/AppNavbar.vue';
 import AppCounter from './components/AppCounter.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
 
 export default {
   components:{
     AppNavbar,
     AppCounter,
-  },
+    AppJumbotron
+},
   data(){
 
   },
@@ -26,7 +28,7 @@ export default {
 <template>
   <AppCounter />
   <AppNavbar />
-  <!-- Jambotron -->
+  <AppJumbotron />
   <!-- ArtistCoaching -->
   <!-- ArtistCorse -->
   <!-- Articoles and Tips -->
