@@ -1,13 +1,28 @@
 @import "bootstrap/scss/bootstrap";
 
-*{
-    font-family: 'Montserrat', sans-serif;
-}
-
 $Orange: #Ef6F31;
 $Sky: #6AC5F1;
 $LightGray: #F5F5F5;
-$Orange: #333333;
+$Black: #333333;
 $White:#ffffff;
-$Orange: #1972F5;
+$BluRoyale: #1972F5;
+
+
+*{
+
+    font-family: 'Montserrat', sans-serif;
+    .artist {
+            font-family:"RossellaDemo";
+            font-size: 50px;
+            color: #6ac5f1;
+        }
+}
+
+@font-face {
+    font-family: "RossellaDemo";
+    src: local("RossellaDemo"),
+        url(./assets/font/Rossela-Demo.ttf) format("truetype");
+}
+
+
 

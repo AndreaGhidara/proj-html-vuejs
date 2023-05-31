@@ -1,25 +1,35 @@
 <script >
 
 export default {
+  nome:"AppNavbar",
   components:{
-    nome:"AppNavbar"
+  
+  },
+  data(){
+    return {
+      navLink:["Home","Pages","Courses","Features","Blog","Shop",],
+    }
+  },
+  methods: {
+
+  },
+  mounted(){
+
   }
 }
 </script>
 
 <template>
-  <nav class="container d-flex justify-content-between align-items-center py-3 px-0">
+  <nav class="container d-flex justify-content-between align-items-center py-4 px-0">
         <div>
           <img style="width: 10rem;" src="/dark-logo.png" alt="">
         </div>
         <div>
           <ul class="d-flex m-0">
-            <li>Home <i class="fa-solid fa-angle-down"></i></li>
-            <li>Pages <i class="fa-solid fa-angle-down"></i></li>
-            <li>Courses <i class="fa-solid fa-angle-down"></i></li>
-            <li>Features <i class="fa-solid fa-angle-down"></i></li>
-            <li>Blog <i class="fa-solid fa-angle-down"></i></li>
-            <li>Shop <i class="fa-solid fa-angle-down"></i></li>
+            <li v-for="links in navLink">
+              {{ links }}
+              <i class="fa-solid fa-angle-down"></i>
+            </li>
           </ul>
         </div>
         <div>
@@ -32,12 +42,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-$White:#ffffff;
-
-  nav{
-    background-color: $White;
-  }
-
   ul{
     list-style: none;
   }
@@ -45,9 +49,11 @@ $White:#ffffff;
   li{
     padding: 0 1rem;
     font-size: 15px;
+    cursor: pointer;
   }
 
   span{
     padding: 0 0.8rem;
+    cursor: pointer;
   }
 </style>
