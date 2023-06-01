@@ -6,9 +6,10 @@ import App from './App.vue'
 import * as bootstrap from 'bootstrap'
 
 // Carousel
-import VueGlide from 'vue-glide-js'
-import 'vue-glide-js/dist/vue-glide.css'
+import VueSplide from '@splidejs/vue-splide';
 
+// app.use( VueSplide );
+// app.mount( '#app' );
 
 
 

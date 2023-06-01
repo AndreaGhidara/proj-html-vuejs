@@ -1,6 +1,4 @@
 <script >
-import { Glide, GlideSlide } from 'vue-glide-js'
-
 
 export default {
   components: {
