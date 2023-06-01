@@ -102,6 +102,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
 $Orange: #Ef6F31;
 $Sky: #6AC5F1;
 
