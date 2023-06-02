@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <div class="container-fluid text-center y-5 box">
+    <div class="container-fluid text-center py-5 box">
         <!-- <img class="artist-shape-1" src="../assets/img/artist-shape-01.png" alt="">
             <img class="maxcoach-shape-13" src="../assets/img/maxcoach-shape-13.png" alt="">
             <img class="maxcoach-shape-14" src="../assets/img/maxcoach-shape-14.png" alt=""> -->
@@ -65,9 +65,9 @@ export default {
 
 
 .box {
-    background-image: url(../assets/img/artist-shape-01.png), url(../assets/img/maxcoach-shape-13.png), url(../assets/img/maxcoach-shape-14.png);
+    background-image: url(../assets/img/artist-shape-01-600x577.png), url(../assets/img/maxcoach-shape-13.png), url(../assets/img/maxcoach-shape-14.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 0% 0%, 107% 40%, -50% 100%;
+    background-position: -6% 100%, 107% 40%, -50% 100%;
 }
 
 // .box {

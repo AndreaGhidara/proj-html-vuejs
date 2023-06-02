@@ -1,13 +1,16 @@
 <script >
 import ArticleCard from './ArticleCard.vue';
+import Carousel from './Carousel.vue';
+
 
 
 
 export default {
   components: {
     nome: "AppAritclesAndTips",
-    ArticleCard
-  },
+    ArticleCard,
+    Carousel,
+},
   data() {
     return {
       articles: [
@@ -36,6 +39,8 @@ export default {
 </script>
 
 <template>
+  
+
   <div class="container-fluid back p-5 text-center">
     <h2 class="artist">Aritcles And Tips</h2>
     <h2 class="pb-4">Latest from the Blog</h2>
