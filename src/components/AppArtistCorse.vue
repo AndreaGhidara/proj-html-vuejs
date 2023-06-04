@@ -82,33 +82,53 @@ export default {
 </script>
 
 <template>
-  <div class="text-center py-5">
-    <h2 class="artist">Artist Coaching</h2>
-    <h2>Latest Online Courses</h2>
-    <div class="pt-3">
-      <div class="container">
-        <div class="row row-cols-4">
-          <div v-for="course in this.courses" class="col">
-            <CardCourse :imgPath=this.getImagePath(course.imgPath) :prezzo="Number(course.price).toFixed(2)" :titolo="course.title" :lezioni=course.lessons
-              :studenti=course.students />
+  <div class="container-full box">
+    <div class="text-center py-5">
+      <h2 class="artist">Artist Coaching</h2>
+      <h2>Latest Online Courses</h2>
+      <div class="pt-3">
+        <div class="container">
+          <div class="row row-cols-4">
+            <div v-for="course in this.courses" class="col">
+              <CardCourse :imgPath=this.getImagePath(course.imgPath) :prezzo="Number(course.price).toFixed(2)"
+                :titolo="course.title" :lezioni=course.lessons :studenti=course.students />
+            </div>
           </div>
         </div>
+        <div>
+          <ButtonCustom class="px-5" text="View All courses &#8594;" />
+        </div>
       </div>
-      <div>
-        <ButtonCustom class="px-5" text="View All courses &#8594;" />
+      <div class="">
+        <h1 class="titleRight m-0">Courses</h1>
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+@use '../variables.scss' as *;
 
-$Orange: #Ef6F31;
-$Sky: #6AC5F1;
+.box {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.titleRight {
+  font-size: 180px;
+  line-height: 0.9em;
+  -webkit-text-stroke-color: #F4EBE2;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 2px;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -15%;
+  top: 50%;
+}
 
 button {
   background-color: #fdf0ea;
-  color: $Orange;
+  color: $Primary;
 
   &:hover {
     background-color: $Sky;

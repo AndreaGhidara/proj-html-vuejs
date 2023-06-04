@@ -27,16 +27,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-$LightGray: #F5F5F5;
-$Orange: #Ef6F31;
-$Sky: #6AC5F1;
+@use '../variables.scss' as *;
 
     div {
         background-color: $LightGray;
     }
 
     button{
-        background-color: $Orange;
+        background-color: $Primary;
 
         &:hover{
             background-color: $Sky;

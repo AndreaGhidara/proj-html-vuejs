@@ -16,7 +16,6 @@ export default defineComponent({
       perPage: 3,
       focus: 'center',
       speed:2000,
-      focus: 1 | 'center'
     };
 
     return { options };
@@ -83,9 +82,12 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 
---splide__arrows{
-  background-color: transparent;
-  color: #fff;
+.splide__slide{
+  opacity: 0.5;
+} 
+
+.is-active{
+  opacity: 1;
 }
 .slider {
   width: calc(100% / 3);

@@ -50,7 +50,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-$Blu: #244186;
+@use '../variables.scss' as *;
+
 
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */

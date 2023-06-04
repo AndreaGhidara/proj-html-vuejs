@@ -91,7 +91,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-$Orange: #Ef6F31;
+@use '../variables.scss' as *;
+
+// $Primary: #Ef6F31;
+
 
 img{
   // filter: invert(50%) sepia(50%) saturate(0%) hue-rotate(0deg) brightness(50%) contrast(100%);
@@ -100,7 +103,7 @@ img{
 }
 
 strong{
-  color: $Orange;
+  color: $Primary;
 }
 
 .CardContainer{

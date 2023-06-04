@@ -43,22 +43,28 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-$Orange: #Ef6F31;
+@use '../variables.scss' as *;
 
 .cardCustom {
-
+  height: 500px;
+  overflow: hidden;
+  
   &:hover {
-    
-    img {
-      transform-origin: 0 0;
-      transition: transform .25s, visibility .25s ease-in;
+      .caradText {
+        transform: translateY(-50px);
+        border: 1px solid #Ef6F31;
+      }
     }
+  .cardImg{
+    transition: transform .5s ease;
 
-    .caradText {
-      transform: translateY(-50px);
-      border: 1px solid #Ef6F31;
+    &:hover{
+      transform: scale(1.3);
+      
     }
+    
   }
+}
 
   .caradText {
     height: 150px;
@@ -80,5 +86,4 @@ $Orange: #Ef6F31;
 
   }
 
-}
 </style>

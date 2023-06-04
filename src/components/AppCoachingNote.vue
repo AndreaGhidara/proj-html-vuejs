@@ -40,11 +40,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-$Orange: #Ef6F31;
-$Sky: #6AC5F1;
+@use '../variables.scss' as *;
 
 button {
-    color: $Orange;
+    color: $Primary;
     background-color: #fdf0ea;
 
     &:hover {

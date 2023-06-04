@@ -96,7 +96,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-$Orange: #Ef6F31;
+@use '../variables.scss' as *;
 
 ul {
   list-style: none;
@@ -108,6 +108,6 @@ li {
 }
 
 .tagIg {
-  color: $Orange;
+  color: $Primary;
 }
 </style>
