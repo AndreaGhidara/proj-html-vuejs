@@ -33,7 +33,7 @@ export default {
           <i class="fa-regular fa-file-lines"></i>
           {{ lezioni }} Lessons
         </p>
-        <p>
+        <p class="pe-2">
           <i class="fa-solid fa-people-group"></i>
           {{ studenti }} Students
         </p>
@@ -48,18 +48,24 @@ export default {
 .cardCustom {
   height: 500px;
   overflow: hidden;
-  
+  .caradText{
+    height: 150px;
+    background-color: white;
+    transition:transform 0.5s ease-in-out;
+  }
   &:hover {
-      .caradText {
-        transform: translateY(-50px);
-        border: 1px solid #Ef6F31;
+    .caradText {
+      width: 90%;
+      transform: translateY(-50px);
+      border: 1px solid #Ef6F31;
       }
     }
+  
   .cardImg{
-    transition: transform .5s ease;
+    transition: transform .6s ease-in-out;
 
     &:hover{
-      transform: scale(1.3);
+      transform: scale(1.1);
       
     }
     
@@ -67,9 +73,6 @@ export default {
 }
 
   .caradText {
-    height: 150px;
-    background-color: white;
-
     .title {
       font-size: larger;
       font-weight: 600;

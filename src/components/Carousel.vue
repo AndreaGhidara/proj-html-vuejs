@@ -3,6 +3,7 @@ import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import { defineComponent } from 'vue';
 
 
+
 export default defineComponent({
   components: {
     Splide,
@@ -14,6 +15,7 @@ export default defineComponent({
       gap: '1rem',
       type: 'loop',
       perPage: 3,
+      arrows:false,
       focus: 'center',
       speed:2000,
     };
@@ -82,6 +84,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 
+
 .splide__slide{
   opacity: 0.5;
 } 
@@ -96,8 +99,11 @@ export default defineComponent({
   max-height: 500px;
 }
 
+
 img {
   width: 100px;
   border-radius: 50%;
 }
+
+
 </style>

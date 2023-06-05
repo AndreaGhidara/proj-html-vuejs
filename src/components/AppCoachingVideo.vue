@@ -19,25 +19,43 @@ export default {
         </svg>
       </div>
     </div>
+    <div class="elementor-shape">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#faf8f6" fill-opacity="0.97"
+          d="M0,288L30,250.7C60,213,120,139,180,112C240,85,300,107,360,138.7C420,171,480,213,540,229.3C600,245,660,235,720,213.3C780,192,840,160,900,149.3C960,139,1020,149,1080,181.3C1140,213,1200,267,1260,266.7C1320,267,1380,213,1410,186.7L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+      </svg>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-
-svg{
+svg {
   width: 100%;
   height: auto;
 }
 
+
 .box {
+  position: relative;
   background-image: url(../assets/img/maxcoach-shape-12.png), url(../assets/img/maxcoach-shape-05.png);
   background-repeat: no-repeat, no-repeat;
   background-position: 80% 93%, 24% 5%;
+  .elementor-shape {
+    position: absolute;
+    z-index: -1;
+    transform: scaleX(-1);
+    bottom: -8rem;
+    width: 100%;
+    height: 500px;
+    
+  }
 }
 
-.imgContainer{
+.imgContainer {
   position: relative;
 }
+
 .shape-fill {
   fill: #B2E0F6;
 }
@@ -51,7 +69,6 @@ svg{
   transform: rotate(0deg) scale(1, 1);
   color: #B2E0F6;
 }
-
 </style>
 
 970 * 570
