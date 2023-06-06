@@ -11,6 +11,7 @@ export default {
   <div class="d-flex justify-content-center align-items-center my-5 py-5 box">
     <div class="imgContainer">
       <img class="img" src="../assets/img/artist-video-poster.jpg" alt="">
+      <iframe width="970" height="570" src="https://www.youtube.com/embed/ElFJ1qcl74U" title="Easily Customize Your Coaching Site With Elementor &amp; MaxCoach" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <div class="svgBox">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="202px" viewBox="0 0 200 202">
           <path class="shape-fill"
@@ -21,19 +22,35 @@ export default {
     </div>
     <div class="elementor-shape">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#faf8f6" fill-opacity="0.97"
+        <path fill="#faf8f6" fill-opacity="1"
           d="M0,288L30,250.7C60,213,120,139,180,112C240,85,300,107,360,138.7C420,171,480,213,540,229.3C600,245,660,235,720,213.3C780,192,840,160,900,149.3C960,139,1020,149,1080,181.3C1140,213,1200,267,1260,266.7C1320,267,1380,213,1410,186.7L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
         </path>
       </svg>
     </div>
   </div>
-  <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/LySiylTTJB4" title="WORDPRESS + CHAT GPT: Creare un Child Theme PRO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 </template>
-
 <style lang="scss" scoped>
+
 svg {
   width: 100%;
   height: auto;
+}
+
+img{
+  position: absolute;
+  z-index: -1;
+  &:hover{
+    opacity: 0;
+    
+  }
+}
+
+iframe{
+  opacity: 0;
+  &:hover{
+    opacity: 1;
+    
+  }
 }
 
 
@@ -63,7 +80,7 @@ svg {
 
 .svgBox {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: -3rem;
   left: -5rem;
   width: 226px;
