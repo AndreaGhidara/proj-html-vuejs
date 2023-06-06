@@ -21,7 +21,7 @@ export default {
     <div class="caradText bg-white text-start p-3">
 
       <p class="m-0 pt-3 fw-Medium text-secondary">
-        ARTIST 
+        ARTIST
       </p>
 
       <p class="fw-bold py-1 fs-5">
@@ -50,8 +50,20 @@ export default {
 
 .cardCustom {
   width: 300px;
+  overflow: hidden;
   box-shadow: 5px 5px 15px 5px #cecbcb;
-}
+  
+  &:hover {
+    img{
+      transition: all 1s ease-in-out;
+      transform: scale(1.1);
+
+      }
+
+
+    }
+  }
+
 
 .img {
   display: block;
