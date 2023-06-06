@@ -100,7 +100,7 @@ export default {
         </div>
       </div>
       <div class="">
-        <h1 class="titleRight m-0">Courses</h1>
+        <h1 class="titleRight SectionTitle m-0">Courses</h1>
       </div>
     </div>
   </div>
@@ -122,7 +122,7 @@ export default {
   -webkit-text-stroke-width: 2px;
   transform: rotate(90deg);
   position: absolute;
-  right: -15%;
+  right: -13%;
   top: 50%;
 }
 

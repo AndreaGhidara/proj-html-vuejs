@@ -17,7 +17,7 @@ export default defineComponent({
       perPage: 3,
       arrows:false,
       focus: 'center',
-      speed:2000,
+      speed:1000,
     };
 
     return { options };

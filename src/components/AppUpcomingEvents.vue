@@ -72,7 +72,7 @@ export default {
 
     </div>
     <div class="sideTitle">
-      <h1 class="title m-0">Events</h1>
+      <h1 class="title SectionTitle m-0">Events</h1>
     </div>
   </div>
 </template>

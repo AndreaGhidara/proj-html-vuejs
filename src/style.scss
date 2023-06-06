@@ -16,6 +16,10 @@ $BluRoyale: #1972F5;
             font-size: 50px;
             color: #6ac5f1;
         }
+    
+    .SectionTitle{
+        font-family: "GilroyLight";
+    }
 }
 
 .splide__pagination__page.is-active {
@@ -25,8 +29,8 @@ $BluRoyale: #1972F5;
 }
 
 .splide__pagination__page {
-    background: #8a8989;
-    border: 0;
+    background: transparent;
+    border: 1px solid black;
     border-radius: 50%;
     display: inline-block;
     height: 8px;
@@ -46,6 +50,11 @@ $BluRoyale: #1972F5;
     font-family: "RossellaDemo";
     src: local("RossellaDemo"),
         url(./assets/font/Rossela-Demo.ttf) format("truetype");
+}
+@font-face {
+    font-family: "GilroyLight";
+    src: local("GilroyLight"),
+        url(./assets/font/Gilroy-Light.otf) format("truetype");
 }
 
 

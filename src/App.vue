@@ -47,9 +47,11 @@ export default {
 </script>
 
 <template>
-  <AppCounter />
-  <AppNavbar />
-  <AppJumbotron />
+  <section id="header">
+    <AppCounter />
+    <AppNavbar />
+    <AppJumbotron />
+  </section>
   <!-- ArtistCoaching -->
   <AppCoaching />
   <AppCoachingNote />

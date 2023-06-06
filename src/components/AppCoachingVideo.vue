@@ -27,6 +27,7 @@ export default {
       </svg>
     </div>
   </div>
+  <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/LySiylTTJB4" title="WORDPRESS + CHAT GPT: Creare un Child Theme PRO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 </template>
 
 <style lang="scss" scoped>
