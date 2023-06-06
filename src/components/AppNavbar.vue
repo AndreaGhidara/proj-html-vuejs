@@ -28,8 +28,16 @@ export default {
       <div>
         <ul class="d-flex m-0">
           <li v-for="links in navLink">
-            {{ links }}
-            <i class="fa-solid fa-angle-down"></i>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ links }}
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -58,6 +66,17 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../variables.scss' as *;
+
+button {
+  border: none;
+
+  &:focus {
+    background-color: $Primary;
+    color: #fff;
+  }
+}
+
 nav {
   position: sticky;
   z-index: 3;
@@ -77,6 +96,35 @@ li {
 span {
   padding: 0 0.8rem;
   cursor: pointer;
+}
+
+// Social
+.fa-facebook-f {
+
+  &:hover {
+    color: #3b5998;
+  }
+}
+
+.fa-twitter {
+
+  &:hover {
+    color: #00ACEE;
+  }
+}
+
+.fa-instagram {
+
+  &:hover {
+    color: orangered;
+  }
+}
+
+.fa-linkedin-in {
+
+  &:hover {
+    color: #0e76a8;
+  }
 }
 
 .navLateral {
